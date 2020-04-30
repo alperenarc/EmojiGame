@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1017485454373",
+    "firebase_url": "https://emoji-34baa.firebaseio.com",
+    "project_id": "emoji-34baa",
+    "storage_bucket": "emoji-34baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017485454373:android:c2441a48ba7ab3f4ad63cc",
+        "android_client_info": {
+          "package_name": "com.emojiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017485454373-vgij4p6em02g70g8lqc7ogqu4h0trbo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq_pjqO9egm_BBn0FKnc2Qe2FWy55TNvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017485454373-vgij4p6em02g70g8lqc7ogqu4h0trbo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

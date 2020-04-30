@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1017485454373-vgij4p6em02g70g8lqc7ogqu4h0trbo6.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://emoji-34baa.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1017485454373</string>
+    <string name="google_api_key" translatable="false">AIzaSyDq_pjqO9egm_BBn0FKnc2Qe2FWy55TNvY</string>
+    <string name="google_app_id" translatable="false">1:1017485454373:android:c2441a48ba7ab3f4ad63cc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDq_pjqO9egm_BBn0FKnc2Qe2FWy55TNvY</string>
+    <string name="google_storage_bucket" translatable="false">emoji-34baa.appspot.com</string>
+    <string name="project_id" translatable="false">emoji-34baa</string>
+</resources>
