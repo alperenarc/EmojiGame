@@ -5,20 +5,28 @@ import Searching from './searching'
 import LottieView from 'lottie-react-native';
 import PlayNetwork from '../../networking/firebase/playNetwork'
 import { useFocusEffect } from '@react-navigation/native'
+
+const isReady = (roomId, navigation) => {
+    PlayNetwork.readyForGame((res) => {
+        // console.warn(res)
+        if (res === true) {
+            console.warn("Oyun Başlıyor...")
+            navigation.navigate('Game', { roomId: roomId })
+        }
+    }, [roomId]);
+}
 const Play = ({ navigation }) => {
     const [show, SetShow] = useState(true);
-
+    const [roomId, SetRoomId] = useState();
     useFocusEffect(
         React.useCallback(() => {
-            PlayNetwork.isRoomEmpty();
-            PlayNetwork.readyForGame((res) => {
-                //console.warn(res)
-                if (res === true) {
-                    console.warn("Oyun Başlıyor...")
-                }
-            });
+            PlayNetwork.isRoomEmpty((res) => {
+                SetRoomId(res)
+                isReady(res,navigation)
+            })
         }, [])
     )
+
     if (show) {
         return (
             <View style={styles.container}>

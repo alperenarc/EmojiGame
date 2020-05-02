@@ -17,7 +17,7 @@ function Game() {
         React.useCallback(() => {
             FirebaseDB.fetchUserInformation((res) => {
                 SetUsers(res);
-                
+
             })
             FirebaseDB.getRoomAnswers((res) => {
                 SetAnswers(res);
@@ -63,12 +63,12 @@ function Game() {
             </View>
         );
     }
-
     if (isLoading) {
 
 
         return (
             <View style={{ flex: 1 }}>
+                
                 <Grid>
                     <Row size={1}>
                         <Col>

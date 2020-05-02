@@ -2,7 +2,8 @@ import auth, { firebase } from '@react-native-firebase/auth'
 import database from '@react-native-firebase/database'
 
 var emtpyRoom = []
-let currentRoomUid = ''
+var currentRoomUid = ''
+var room = ''
 class PlayNetwork {
 
     getCurrentUsername = () => {
@@ -21,7 +22,8 @@ class PlayNetwork {
         return uuid;
     }
 
-    isRoomEmpty = async () => {
+    isRoomEmpty = async (callback) => {
+
         /*await database().ref().child("rooms").orderByChild("isStart").equalTo(false).once("value", function (snapshot) {
             if (!snapshot.exists()) {
                 this.createRoom()
@@ -37,8 +39,10 @@ class PlayNetwork {
 
         const rooms = await database().ref().child("rooms").orderByChild("isStart").equalTo(false).once("value");
         if (!rooms.exists()) {
-            this.createRoom()
-            //console.warn('Room created')
+            this.createRoom((res) => {
+                callback(res)
+            })
+
         }
         rooms.forEach(function (childSnapshot) {
             var childData = childSnapshot.key;
@@ -48,17 +52,16 @@ class PlayNetwork {
             }*/
         });
         if (emtpyRoom.length >= 1) {
-            console.warn(emtpyRoom[0])
-            this.joinRoom(emtpyRoom[0])
+            this.joinRoom((res) => {
+                callback(res)
+            }, [emtpyRoom[0]])
         }
-
 
     }
 
-    createRoom = async () => {
+    createRoom = async (callback) => {
         const roomUid = this.create_UUID();
         currentRoomUid = roomUid
-        console.warn(currentRoomUid)
         const room = database().ref(`/rooms/${roomUid}`);
         const user = database().ref(`/rooms/${roomUid}/users/${auth().currentUser.uid}`);
         var username = ''
@@ -91,12 +94,11 @@ class PlayNetwork {
                 //navigation.navigate('InitialApp')-
             }
         });
-        
+        callback(roomUid)
     }
 
-    joinRoom = async (roomId) => {
+    joinRoom = async (callback = f => f, roomId) => {
         currentRoomUid = roomId
-        console.warn(currentRoomUid)
         var username = ''
         await database().ref(`/users/${auth().currentUser.uid}`).once('value', function (snap) {
             username = snap.val().username
@@ -116,16 +118,17 @@ class PlayNetwork {
                 alert("Error")
             } else {
                 // Data saved successfully!
-                console.warn('GAAMxE')
-                
+                //console.warn('GAAMxE')
+
             }
         });
+        callback(roomId)
     }
 
-    readyForGame = async (callback = f => f) => {
-       
-        await database().ref(`/rooms/${currentRoomUid}`).child('isStart').on('value', function (snap) {
-            console.warn(currentRoomUid)
+    readyForGame = (callback = f => f, currentRoomUid) => {
+
+        database().ref(`/rooms/${currentRoomUid}`).child('isStart').on('value', function (snap) {
+            //console.warn(snap.val())
             callback(snap.val())
         })
     }
