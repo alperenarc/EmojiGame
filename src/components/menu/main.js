@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View, StatusBar, StyleSheet } from 'react-native'
 import { Grid, Row, Col } from 'react-native-easy-grid'
-import {Button} from 'native-base'
+import { Button } from 'native-base'
 
 //Kaldırılacak Deneme için konmuştur.
 import Game from '../game/index'
@@ -12,9 +12,13 @@ const Main = ({ navigation }) => {
 
     return (
         <View style={{ backgroundColor: '#fff', flex: 1 }}>
-            <View>
+            {/**
+             * 
+             * <View>
                 <StatusBar hidden={true} barStyle="dark-content" />
             </View>
+             * 
+             */}
             <Grid>
                 <Col style={styles.cols}>
                     <View style={styles.eachCol}>

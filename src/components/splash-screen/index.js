@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Image } from 'react-native';
 import LottieView from 'lottie-react-native';
 import auth from '@react-native-firebase/auth';
 import { useFocusEffect } from '@react-navigation/native';
@@ -40,6 +40,12 @@ const splashScreen = ({ navigation }) => {
     return (
         <View style={styles.center}>
             <LottieView style={{ width: 200 }} source={require('../../animations/animation.json')} autoPlay loop />
+            <Image
+                style={styles.tinyLogo}
+                source={{
+                    uri: 'https://reactnative.dev/img/tiny_logo.png',
+                }}
+            />
         </View>
     )
 }

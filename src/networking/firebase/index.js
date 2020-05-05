@@ -4,7 +4,7 @@ import database from '@react-native-firebase/database'
 
 
 var currentUsername = '';
-var roomUid = '4c1a9ce4-5745-40c3-8dd7-37bb1fdaf407';
+var roomUid = '';//'4c1a9ce4-5745-40c3-8dd7-37bb1fdaf407';
 var answers = [];
 var isExistUsername = false;
 var users = []
@@ -121,8 +121,8 @@ class Firebase {
         console.warn(time);
         return time
     }
-    answered = async (answer) => {
-        
+    answered = async (answer, roomUid) => {
+
         const answerUid = this.createTimeNow()
         await database().ref(`/users/${auth().currentUser.uid}`).once('value', function (snap) {
             currentUsername = snap.val().username
@@ -142,7 +142,7 @@ class Firebase {
         });
     }
 
-    getRoomAnswers = async (callback) => {
+    getRoomAnswers = async (callback = f => f, roomUid) => {
 
         await database().ref(`/rooms/${roomUid}/answers/`)
             .on('value', function (snap) {
@@ -164,7 +164,7 @@ class Firebase {
             callback(snap.val().username)
         })
     }
-    fetchUserInformation = async (callback) => {
+    fetchUserInformation = async (callback = f => f, roomUid) => {
 
         await database().ref(`/rooms/${roomUid}/users`).on('value', function (snap) {
             users = []
@@ -176,9 +176,9 @@ class Firebase {
             callback(users)
         })
     }
-    addPointtoUser = async () => {
+    addPointtoUser = async (roomUid) => {
 
-        await this.nextQuestion()
+        await this.nextQuestion(roomUid)
         const ref = database().ref(`/rooms/${roomUid}/users/${auth().currentUser.uid}`);
         await ref.update({
 
@@ -192,7 +192,7 @@ class Firebase {
         });
         score += 1
     }
-    nextQuestion = async () => {
+    nextQuestion = async (roomUid) => {
         const ref = database().ref(`/rooms/${roomUid}`);
         await ref.update({
 
@@ -205,7 +205,7 @@ class Firebase {
             }
         });
     }
-    getCurrentQuestionIndex = async (callback) => {
+    getCurrentQuestionIndex = async (callback = f => f, roomUid) => {
         await database().ref(`/rooms/${roomUid}`).child('currentQuestionIndex').on('value', function (snap) {
             currentQuestionIndex = snap.val()
             callback(currentQuestionIndex)
@@ -222,15 +222,16 @@ class Firebase {
             callback(true)
         })
     }
-    currentQuestion = async (callback = f => f) => {
+    currentQuestion = async (callback = f => f, roomUid) => {
 
         await this.getRandomQuestions(() => {
             this.getCurrentQuestionIndex((res) => {
+                console.warn(roomUid)
                 currentQuestion = []
                 currentQuestion = questions[res]
                 correctAnswer = currentQuestion.correctAnswer;
                 callback(currentQuestion)
-            })
+            }, [roomUid])
         })
     }
 }

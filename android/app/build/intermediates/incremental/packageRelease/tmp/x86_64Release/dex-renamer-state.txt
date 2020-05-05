@@ -1,0 +1,4 @@
+#Mon May 04 17:24:10 EET 2020
+base.0=C\:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

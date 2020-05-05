@@ -69,7 +69,8 @@ class PlayNetwork {
             username = snap.val().username
         })
         await room.set({
-            isStart: false
+            isStart: false,
+            currentQuestionIndex: 0
         }, (error) => {
             if (error) {
                 // The write failed...
@@ -98,30 +99,25 @@ class PlayNetwork {
     }
 
     joinRoom = async (callback = f => f, roomId) => {
+        
         currentRoomUid = roomId
         var username = ''
         await database().ref(`/users/${auth().currentUser.uid}`).once('value', function (snap) {
             username = snap.val().username
         })
+
         const room = database().ref(`/rooms/${roomId}`);
-        await room.set({
-            isStart: true
+        await room.update({
+            isStart: true,
+            currentQuestionIndex: 0
         });
-        const user = database().ref(`/rooms/${roomId}/users/${auth().currentUser.uid}`);
-        await user.set({
+
+        const usersRef = database().ref(`/rooms/${roomId}/users/`).child(auth().currentUser.uid)
+        await usersRef.set({
             username: username,
             skor: 0
-        }, (error) => {
-            if (error) {
-                // The write failed...
-                console.log(error)
-                alert("Error")
-            } else {
-                // Data saved successfully!
-                //console.warn('GAAMxE')
-
-            }
         });
+
         callback(roomId)
     }
 
