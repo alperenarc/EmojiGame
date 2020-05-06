@@ -95,6 +95,7 @@ class PlayNetwork {
                 //navigation.navigate('InitialApp')-
             }
         });
+        console.warn(roomUid)
         callback(roomUid)
     }
 
@@ -117,8 +118,8 @@ class PlayNetwork {
             username: username,
             skor: 0
         });
-
-        callback(roomId)
+        console.warn(roomId)
+        callback(roomId[0])
     }
 
     readyForGame = (callback = f => f, currentRoomUid) => {

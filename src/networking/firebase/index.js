@@ -31,7 +31,6 @@ class Firebase {
             }, (error) => {
                 if (error) {
                     // The write failed...
-                    console.log(error)
                     alert("Error")
                 } else {
                     // Data saved successfully!
@@ -48,7 +47,6 @@ class Firebase {
         isExistUsername = false;
         await database().ref().child("users").orderByChild("username").equalTo(username).on("value", function (snapshot) {
             if (snapshot.exists()) {
-                console.log("exist")
                 isExistUsername = true
             } else {
                 console.log("not exist")
@@ -112,13 +110,11 @@ class Firebase {
         // add hyphens
         returnString = returnString.replace(/\s/g, "");
 
-        //console.warn(returnString.toUpperCase());
 
         return returnString.toUpperCase();
     }
     createTimeNow = () => {
         var time = new Date().getTime();
-        console.warn(time);
         return time
     }
     answered = async (answer, roomUid) => {
@@ -226,7 +222,7 @@ class Firebase {
 
         await this.getRandomQuestions(() => {
             this.getCurrentQuestionIndex((res) => {
-                console.warn(roomUid)
+                
                 currentQuestion = []
                 currentQuestion = questions[res]
                 correctAnswer = currentQuestion.correctAnswer;

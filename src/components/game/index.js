@@ -15,8 +15,8 @@ function Game(props) {
     const [getQuestionsDone, SetGetQuestionsDone] = useState(false);
     const [roomUid, SetRoomUid] = useState();
     useEffect(() => {
-        SetRoomUid(props.route.params.roomId[0])
-        //console.warn(roomUid)
+        SetRoomUid(props.route.params.roomId)
+        console.warn(roomUid)
     }, [])
     useFocusEffect(
 
@@ -25,6 +25,7 @@ function Game(props) {
             if (roomUid) {
                 //console.warn('Çalıştı')
                 FirebaseDB.fetchUserInformation((res) => {
+                    console.warn(res)
                     SetUsers(res);
                 }, [roomUid])
                 FirebaseDB.getRoomAnswers((res) => {
@@ -34,6 +35,7 @@ function Game(props) {
                     SetCurrentUsername(res)
                 })
                 FirebaseDB.currentQuestion((res) => {
+                    console.warn(roomUid)
                     SetCurrentQuestion(res)
                     SetIsLoading(true);
                 }, [roomUid]);
@@ -74,14 +76,18 @@ function Game(props) {
 
                 <Grid>
                     <Row size={1} style={styles.scoreTable}>
-                        <Col style={{ flexDirection:'row' }}>
+                        <Col style={{ flexDirection: 'row' }}>
 
                             <Text>{users[0].username}</Text>
                             <Text>{users[0].skor}</Text>
+
+
                         </Col>
-                        <Col style={{ flexDirection:'row' }}>
+                        <Col style={{ flexDirection: 'row' }}>
                             <Text>{users[1].username}</Text>
                             <Text>{users[1].skor}</Text>
+
+
 
                         </Col>
                     </Row>
@@ -139,18 +145,18 @@ const styles = StyleSheet.create({
     },
     item: {
         padding: 2,
-        paddingHorizontal:5,
+        paddingHorizontal: 5,
         marginHorizontal: 3,
         alignItems: 'flex-end',
     },
     title: {
         fontSize: 15,
         fontFamily: 'monospace',
-        color:'#fff'
+        color: '#fff'
     },
     itemOther: {
         padding: 2,
-        paddingHorizontal:5,
+        paddingHorizontal: 5,
         marginHorizontal: 3,
         alignItems: 'flex-start'
 
@@ -158,18 +164,18 @@ const styles = StyleSheet.create({
     scoreTable: {
         padding: 10
     },
-    box:{
-        paddingHorizontal:8,
-        paddingVertical:5,
-        borderRadius:20,
-        backgroundColor:'#febd00',
-        borderBottomRightRadius:0
+    box: {
+        paddingHorizontal: 8,
+        paddingVertical: 5,
+        borderRadius: 20,
+        backgroundColor: '#febd00',
+        borderBottomRightRadius: 0
     },
-    boxOther:{
-        paddingHorizontal:8,
-        paddingVertical:5,
-        borderRadius:20,
-        borderBottomLeftRadius:0,
-        backgroundColor:'#fe0083'
+    boxOther: {
+        paddingHorizontal: 8,
+        paddingVertical: 5,
+        borderRadius: 20,
+        borderBottomLeftRadius: 0,
+        backgroundColor: '#fe0083'
     }
 });
