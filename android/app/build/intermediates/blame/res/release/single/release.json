@@ -2328,10 +2328,6 @@
         "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\generated\\res\\react\\release\\raw\\node_modules_reactnativevectoricons_glyphmaps_simplelineicons.json"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_src_animations_animation.json.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\generated\\res\\react\\release\\raw\\src_animations_animation.json"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_secondary_text_material_light.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\color\\abc_secondary_text_material_light.xml"
     },

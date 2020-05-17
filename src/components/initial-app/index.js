@@ -6,7 +6,7 @@ import Main from '../menu/main'
 import Options from '../menu/options'
 import Game from '../game'
 import Play from '../menu/play'
-
+import GameOver from '../menu/endOfTheGame'
 //import CustomTabBar from '../custom-tabbar/index'
 
 import { createStackNavigator } from '@react-navigation/stack'
@@ -15,24 +15,6 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 const initialApp = () => {
-
-
-    const createCreateMeetStack = () => {
-        return (
-            <Stack.Navigator>
-                <Stack.Screen name="CreateMeet" component={CreateMeet}
-                    options={{
-                        headerShown: false
-                    }}
-                />
-                <Stack.Screen name="MeetDetail" component={MeetDetail}
-                    options={{
-                        headerShown: false
-                    }}
-                />
-            </Stack.Navigator>
-        )
-    }
 
 
 
@@ -52,10 +34,11 @@ const initialApp = () => {
     const createMeetsStack = () => {
         return (
             <Stack.Navigator>
-                
+
                 <Stack.Screen name="Main" component={Main}
                     options={{
-                        headerShown: false
+                        headerShown: false,
+
                     }}
                 />
                 <Stack.Screen name="Play" component={Play}
@@ -67,6 +50,12 @@ const initialApp = () => {
                     options={{
                         headerShown: false
                     }} />
+                <Stack.Screen name="GameOver" component={GameOver}
+                    options={{
+                        headerShown: false,
+
+                    }}
+                />
             </Stack.Navigator>
         )
     }

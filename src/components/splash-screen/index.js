@@ -28,22 +28,22 @@ const splashScreen = ({ navigation }) => {
         //go auth
         setTimeout(function () {
             navigation.navigate('Auth')
-        }, 1000);
+        }, 3000);
 
     } else {
         //go app
         setTimeout(function () {
             navigation.navigate('InitialApp')
-        }, 1000);
+        }, 3000);
     }
 
     return (
         <View style={styles.center}>
-            <LottieView style={{ width: 200 }} source={require('../../animations/animation.json')} autoPlay loop />
+            {/** <LottieView style={{ width: 200 }} source={require('../../animations/animation.json')} autoPlay loop />*/}
             <Image
                 style={styles.tinyLogo}
                 source={{
-                    uri: 'https://reactnative.dev/img/tiny_logo.png',
+                    uri: 'https://user-images.githubusercontent.com/34552821/81238089-c73d2500-9009-11ea-8f04-6367598685f0.png',
                 }}
             />
         </View>
@@ -54,7 +54,12 @@ const styles = StyleSheet.create({
     center: {
         flex: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: '#fff'
+    },
+    tinyLogo: {
+        width: 200,
+        height: 130
     }
 })
 

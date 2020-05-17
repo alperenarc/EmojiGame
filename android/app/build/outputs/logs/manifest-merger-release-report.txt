@@ -4,6 +4,7 @@ ADDED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\A
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml:1:1-27:12
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_google-signin] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_masked-view] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-firebase_auth] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-firebase\auth\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
@@ -13,7 +14,6 @@ MERGED from [:lottie-react-native] C:\Users\Alperen\Desktop\EmojiGame-ReactNativ
 MERGED from [:react-native-gesture-handler] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-safe-area-context] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-screens\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\ed6762aca0dfea73f56576e6e498e5f4\jetified-react-native-0.62.2\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\a1d64627529d8d421c0b27e7fdd4a3e1\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\bbf0e9fab1af79c79ac1770ffe9175cc\android-jsc-r245459\AndroidManifest.xml:2:1-11:12
@@ -223,6 +223,8 @@ uses-sdk
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Alperen\Desktop\EmojiGame-ReactNative\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_google-signin] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_google-signin] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-community_masked-view] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\release\AndroidManifest.xml:5:5-7:41
@@ -241,8 +243,6 @@ MERGED from [:react-native-safe-area-context] C:\Users\Alperen\Desktop\EmojiGame
 MERGED from [:react-native-safe-area-context] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-screens] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-screens\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-screens] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-screens\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] C:\Users\Alperen\Desktop\EmojiGame-ReactNative\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\release\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\ed6762aca0dfea73f56576e6e498e5f4\jetified-react-native-0.62.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.2] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\ed6762aca0dfea73f56576e6e498e5f4\jetified-react-native-0.62.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Alperen\.gradle\caches\transforms-2\files-2.1\a1d64627529d8d421c0b27e7fdd4a3e1\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44

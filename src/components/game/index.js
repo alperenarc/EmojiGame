@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, FlatList, ScrollView, TextInput, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, FlatList, StatusBar, ScrollView, KeyboardAwareScrollView, TextInput, ActivityIndicator, Image } from 'react-native';
 import FirebaseDB from '../../networking/firebase/index';
 import Emoji from 'react-native-emoji';
 import { Grid, Row, Col } from 'react-native-easy-grid'
 import { useFocusEffect } from '@react-navigation/native'
+import EndOfTheGame from '../menu/endOfTheGame'
 function Game(props) {
     const [users, SetUsers] = useState();
     const [isLoading, SetIsLoading] = useState(false);
@@ -14,30 +15,35 @@ function Game(props) {
     const [questionCount, SetQuestionCount] = useState(0);
     const [getQuestionsDone, SetGetQuestionsDone] = useState(false);
     const [roomUid, SetRoomUid] = useState();
+    const [isGameOver, SetIsGameOver] = useState(false);
     useEffect(() => {
         SetRoomUid(props.route.params.roomId)
-        console.warn(roomUid)
     }, [])
     useFocusEffect(
 
         React.useCallback(() => {
 
             if (roomUid) {
-                //console.warn('Çalıştı')
                 FirebaseDB.fetchUserInformation((res) => {
-                    console.warn(res)
                     SetUsers(res);
                 }, [roomUid])
                 FirebaseDB.getRoomAnswers((res) => {
+
                     SetAnswers(res);
                 }, [roomUid])
                 FirebaseDB.getCurrentUsername((res) => {
                     SetCurrentUsername(res)
                 })
                 FirebaseDB.currentQuestion((res) => {
-                    console.warn(roomUid)
-                    SetCurrentQuestion(res)
-                    SetIsLoading(true);
+                    if (res === 'Game Over') {
+                        SetIsGameOver(true)
+                        SetIsLoading(false)
+                    } else {
+                        SetIsGameOver(false)
+                        SetCurrentQuestion(res)
+                        SetIsLoading(true)
+                    }
+
                 }, [roomUid]);
             }
 
@@ -51,9 +57,13 @@ function Game(props) {
 
             FirebaseDB.currentQuestion((res) => {
 
-                SetCurrentQuestion(res)
-                //SetQuestionCount(questionCount + 1)
-                SetIsLoading(true);
+                if (res === 'Game Over') {
+                    SetIsGameOver(true)
+                    SetIsLoading(false)
+                } else {
+                    SetCurrentQuestion(res)
+                    SetIsLoading(true)
+                }
 
             }, [roomUid]);
         }
@@ -68,56 +78,82 @@ function Game(props) {
             </View>
         );
     }
+    if(isGameOver){
+        return <EndOfTheGame/>
+    }
     if (isLoading) {
-
-
         return (
             <View style={{ flex: 1 }}>
-
+                <View>
+                    <StatusBar barStyle="dark-content" />
+                </View>
                 <Grid>
                     <Row size={1} style={styles.scoreTable}>
                         <Col style={{ flexDirection: 'row' }}>
 
-                            <Text>{users[0].username}</Text>
-                            <Text>{users[0].skor}</Text>
+                            <Col size={3} style={{ height: '100%' }}>
+                                <View style={{ margin: 2, padding: 10, }}>
+                                    <Text style={{ color: '#7b00fe', textAlign: 'right', fontWeight: 'bold', fontFamily: 'monospace', fontSize: 15 }}>{users[0].username}</Text>
+                                </View>
+
+                            </Col>
+                            <Col size={1} style={{ height: '100%' }}>
+                                <View style={{ margin: 2, padding: 10, }}>
+                                    <Text style={{ color: '#7b00fe', textAlign: 'right', fontWeight: 'bold', fontFamily: 'monospace', fontSize: 15 }}>{users[0].skor}</Text>
+                                </View>
+
+                            </Col>
 
 
                         </Col>
                         <Col style={{ flexDirection: 'row' }}>
-                            <Text>{users[1].username}</Text>
-                            <Text>{users[1].skor}</Text>
+                            <Col size={1} style={{ height: '100%' }}>
+                                <View style={{ margin: 2, padding: 10, }}>
+                                    <Text style={{ color: '#7b00fe', textAlign: 'left', fontWeight: 'bold', fontFamily: 'monospace', fontSize: 15 }}>{users[1].skor}</Text>
+                                </View>
 
+                            </Col>
+                            <Col size={3} style={{ height: '100%' }}>
+                                <View style={{ margin: 2, padding: 10, }}>
+                                    <Text style={{ color: '#7b00fe', textAlign: 'left', fontWeight: 'bold', fontFamily: 'monospace', fontSize: 15 }}>{users[1].username}</Text>
+                                </View>
 
-
+                            </Col>
                         </Col>
                     </Row>
-                    <Row size={3}>
+                    <Row size={4} style={{ margin: 5, borderWidth: 1, borderRadius: 30, borderColor: '#7b00fe', backgroundColor: '#f5f5f5' }}>
 
                         {
                             Object.keys(currentQuestion.question).map((obj, i) => {
                                 return (
-                                    <Col>
-                                        <Emoji name={currentQuestion.question[obj]} style={{ fontSize: 60 }} />
+                                    <Col style={{ justifyContent: 'center', alignItems: 'center' }}>
+                                        {/**<Emoji name={currentQuestion.question[obj]} style={{ fontSize: 60 }} />*/}
+                                        <Image source={{
+                                            uri: currentQuestion.question[obj],
+                                        }} style={{ width: '60%', height: 100 }} />
                                     </Col>
                                 )
                             })}
 
 
                     </Row>
-                    <Row size={8}>
-                        <Col>
+                    <Row size={4} style={{ flexDirection: 'column', backgroundColor: '#fff' }}>
+
+                        <Col size={3}>
                             <SafeAreaView style={styles.container}>
                                 <FlatList
                                     data={answers}
                                     renderItem={({ item }) => <Item item={item} />}
                                     keyExtractor={item => item.answer}
+                                    inverted
                                 />
 
 
                             </SafeAreaView>
-
+                        </Col>
+                        <Col size={1} >
                             <TextInput
-                                style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+                                style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 20, paddingLeft: 5, marginHorizontal: 5, borderColor: '#7b00fe' }}
                                 onChangeText={(text) => SetText(text)}
                                 onSubmitEditing={() => press(text)}
                                 blurOnSubmit={false}
@@ -125,9 +161,10 @@ function Game(props) {
                             />
                         </Col>
 
+
+
                     </Row>
                 </Grid>
-
             </View>
         )
     } else {
@@ -141,7 +178,7 @@ export default Game
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
     },
     item: {
         padding: 2,
@@ -162,7 +199,15 @@ const styles = StyleSheet.create({
 
     },
     scoreTable: {
-        padding: 10
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: { width: 1, height: 1 },
+        shadowOpacity: 0.4,
+        shadowRadius: 3,
+        elevation: 5,
+        backgroundColor: '#d5d5d5',
+
+
     },
     box: {
         paddingHorizontal: 8,

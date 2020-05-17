@@ -7172,8 +7172,7 @@ public final class R {
     public static final int node_modules_reactnativevectoricons_glyphmaps_octicons=0x7f0e000f;
     public static final int node_modules_reactnativevectoricons_glyphmaps_simplelineicons=0x7f0e0010;
     public static final int node_modules_reactnativevectoricons_glyphmaps_zocial=0x7f0e0011;
-    public static final int src_animations_animation=0x7f0e0012;
-    public static final int src_animations_vs=0x7f0e0013;
+    public static final int src_animations_vs=0x7f0e0012;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0f0000;

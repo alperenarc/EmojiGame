@@ -118,11 +118,12 @@ class Firebase {
         return time
     }
     answered = async (answer, roomUid) => {
-
-        const answerUid = this.createTimeNow()
+        var max = 2147483647
+        var answerUid = this.createTimeNow()
         await database().ref(`/users/${auth().currentUser.uid}`).once('value', function (snap) {
             currentUsername = snap.val().username
         })
+        answerUid = max - answerUid
         const answers = database().ref(`/rooms/${roomUid}/answers/${answerUid}`);
 
         await answers.set({
@@ -146,7 +147,7 @@ class Firebase {
                 snap.forEach(function (childSnapshot) {
 
                     var childData = childSnapshot.val();
-                    answers.push(childData)
+                    answers.unshift(childData)
 
                 });
                 callback(answers)
@@ -222,11 +223,17 @@ class Firebase {
 
         await this.getRandomQuestions(() => {
             this.getCurrentQuestionIndex((res) => {
+                if (res === 10) {
+                    callback('Game Over')
+                }
+                else {
+                    currentQuestion = []
+                    currentQuestion = questions[res]
+                    correctAnswer = currentQuestion.correctAnswer;
+                    callback(currentQuestion)
+                }
+
                 
-                currentQuestion = []
-                currentQuestion = questions[res]
-                correctAnswer = currentQuestion.correctAnswer;
-                callback(currentQuestion)
             }, [roomUid])
         })
     }
