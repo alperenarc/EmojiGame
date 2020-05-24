@@ -5,7 +5,7 @@ import Emoji from 'react-native-emoji';
 import { Grid, Row, Col } from 'react-native-easy-grid'
 import { useFocusEffect } from '@react-navigation/native'
 import EndOfTheGame from '../menu/endOfTheGame'
-function Game(props) {
+function Game(props, { navigation }) {
     const [users, SetUsers] = useState();
     const [isLoading, SetIsLoading] = useState(false);
     const [answers, SetAnswers] = useState();
@@ -78,8 +78,9 @@ function Game(props) {
             </View>
         );
     }
-    if(isGameOver){
-        return <EndOfTheGame/>
+    if (isGameOver) {
+
+         props.navigation.navigate('GameOver', { navigation: navigation })
     }
     if (isLoading) {
         return (

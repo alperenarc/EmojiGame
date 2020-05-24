@@ -4,8 +4,8 @@ import { Grid, Row, Col } from 'react-native-easy-grid'
 import { Button } from 'native-base'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-const image = { uri: "https://wallpaperaccess.com/full/1134824.png" };
-function EndOfTheGame({ navigation }) {
+const image = { uri: "https://user-images.githubusercontent.com/34552821/82718002-7f282e80-9ca8-11ea-9a0d-52138c1d1bc7.jpg" };
+function EndOfTheGame( {navigation} ) {
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground source={image} style={styles.image}>

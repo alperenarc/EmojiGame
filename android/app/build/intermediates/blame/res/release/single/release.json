@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color_material_on_primary_disabled.xml.flat",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_btn_colored_borderless_text_material.xml.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\color\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_calendar_vertical.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\layout\\mtrl_calendar_vertical.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_btn_colored_borderless_text_material.xml.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color-v23_abc_tint_seek_thumb.xml.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\color\\mtrl_filled_stroke_color.xml"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\color_abc_hint_foreground_material_dark.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_abc_action_bar_up_container.xml.flat",
@@ -124,12 +124,12 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_node_modules_reactnavigation_stack_src_views_assets_backicon.png.flat",
@@ -148,16 +148,16 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_picker_text_input_date_range.xml.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\layout\\mtrl_picker_text_input_date_range.xml"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_abc_popup_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout_mtrl_picker_text_input_date_range.xml.flat",
-        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\layout\\mtrl_picker_text_input_date_range.xml"
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\51c60a74c89e63786feb7a72e94c376c\\core-1.1.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\anim_fragment_close_enter.xml.flat",
@@ -246,10 +246,6 @@
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_common_google_signin_btn_text_disabled.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\2bf143a8a6d9cc9b01c998d0d6ca7843\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
-    },
-    {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_list_divider_material.xml.flat",
@@ -538,6 +534,10 @@
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_zocial.json.flat",
         "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\generated\\res\\react\\release\\raw\\node_modules_reactnativevectoricons_glyphmaps_zocial.json"
+    },
+    {
+        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\raw_node_modules_reactnativevectoricons_glyphmaps_evilicons.json.flat",
@@ -960,10 +960,6 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\anim\\abc_tooltip_enter.xml"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -1162,10 +1158,6 @@
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\layout-v26_mtrl_calendar_month.xml.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\layout-v26\\mtrl_calendar_month.xml"
-    },
-    {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -1896,10 +1888,6 @@
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\7c9142c17550c92dab314dac75f37ca0\\material-1.1.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
     },
     {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
@@ -2446,10 +2434,6 @@
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Alperen\\.gradle\\caches\\transforms-2\\files-2.1\\fac11e4053b0ee70596ac6ed52e12b3e\\appcompat-1.1.0\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\res\\merged\\release\\drawable_abc_btn_colored_material.xml.flat",

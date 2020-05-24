@@ -1,4 +1,4 @@
-#Sat May 16 04:34:42 EET 2020
+#Mon May 25 02:16:05 EET 2020
 base.2=C\:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\Users\\Alperen\\Desktop\\EmojiGame-ReactNative\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
